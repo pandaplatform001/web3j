@@ -18,7 +18,7 @@ import java.util.Map;
 
 import org.web3j.protocol.core.Response;
 
-/** eth_compileSolidity. */
+/** gptc_compileSolidity. */
 public class EthCompileSolidity extends Response<Map<String, EthCompileSolidity.Code>> {
 
     public Map<String, Code> getCompiledSolidity() {
@@ -249,7 +249,7 @@ public class EthCompileSolidity extends Response<Map<String, EthCompileSolidity.
 
     public static class Documentation {
         // No documentation available
-        // See https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_compilesolidity
+        // See https://github.com/ethereum/wiki/wiki/JSON-RPC#gptc_compilesolidity
         private Map<String, String> methods; // unknown object type
 
         public Documentation() {

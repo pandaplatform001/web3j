@@ -24,7 +24,7 @@ import com.fasterxml.jackson.databind.ObjectReader;
 import org.web3j.protocol.ObjectMapperFactory;
 import org.web3j.protocol.core.Response;
 
-/** eth_getTransactionReceipt. */
+/** gptc_getTransactionReceipt. */
 public class EthGetTransactionReceipt extends Response<TransactionReceipt> {
 
     public Optional<TransactionReceipt> getTransactionReceipt() {

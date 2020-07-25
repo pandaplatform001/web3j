@@ -17,7 +17,7 @@ import java.math.BigInteger;
 import org.web3j.protocol.core.Response;
 import org.web3j.utils.Numeric;
 
-/** eth_chainId. */
+/** gptc_chainId. */
 public class EthChainId extends Response<String> {
     public BigInteger getChainId() {
         return Numeric.decodeQuantity(getResult());

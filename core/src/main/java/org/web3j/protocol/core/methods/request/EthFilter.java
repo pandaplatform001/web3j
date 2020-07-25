@@ -19,7 +19,7 @@ import org.web3j.protocol.core.DefaultBlockParameter;
 
 /**
  * Filter implementation as per <a
- * href="https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_newfilter">docs</a>.
+ * href="https://github.com/ethereum/wiki/wiki/JSON-RPC#gptc_newfilter">docs</a>.
  */
 public class EthFilter extends Filter<EthFilter> {
     private DefaultBlockParameter fromBlock; // optional, params - defaults to latest for both

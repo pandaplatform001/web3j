@@ -21,9 +21,9 @@ import org.web3j.utils.Numeric;
  * Log object used by {@link EthLog} and {@link EthGetTransactionReceipt}.
  *
  * <p>It's not clear in the <a
- * href="https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_newfilter">docs</a> If only a list of
- * hashes are returned for filters created with eth_newBlockFilter or
- * eth_newPendingTransactionFilter.
+ * href="https://github.com/ethereum/wiki/wiki/JSON-RPC#gptc_newfilter">docs</a> If only a list of
+ * hashes are returned for filters created with gptc_newBlockFilter or
+ * gptc_newPendingTransactionFilter.
  */
 public class Log {
     private boolean removed;

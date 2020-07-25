@@ -26,7 +26,7 @@ import org.web3j.protocol.ObjectMapperFactory;
 import org.web3j.protocol.core.Response;
 
 /**
- * eth_syncing.
+ * gptc_syncing.
  *
  * <p>Returns an object with data about the sync status or false.
  */

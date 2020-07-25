@@ -33,13 +33,13 @@ import org.web3j.utils.Numeric;
  * Block object returned by:
  *
  * <ul>
- *   <li>eth_getBlockByHash
- *   <li>eth_getBlockByNumber
- *   <li>eth_getUncleByBlockHashAndIndex
- *   <li>eth_getUncleByBlockNumberAndIndex
+ *   <li>gptc_getBlockByHash
+ *   <li>gptc_getBlockByNumber
+ *   <li>gptc_getUncleByBlockHashAndIndex
+ *   <li>gptc_getUncleByBlockNumberAndIndex
  * </ul>
  *
- * <p>See <a href="https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gettransactionbyhash">docs</a>
+ * <p>See <a href="https://github.com/ethereum/wiki/wiki/JSON-RPC#gptc_gettransactionbyhash">docs</a>
  * for further details.
  *
  * <p>See the following <a href="https://github.com/ethcore/parity/issues/2401">issue</a> for

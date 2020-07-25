@@ -91,7 +91,7 @@ public class HttpServiceTest {
 
         Request<String, EthBlockNumber> request =
                 new Request<>(
-                        "eth_blockNumber1",
+                        "gptc_blockNumber1",
                         Collections.emptyList(),
                         mockedHttpService,
                         EthBlockNumber.class);
@@ -111,7 +111,7 @@ public class HttpServiceTest {
     public void subscriptionNotSupported() {
         Request<Object, EthSubscribe> subscribeRequest =
                 new Request<>(
-                        "eth_subscribe",
+                        "gptc_subscribe",
                         Arrays.asList("newHeads", Collections.emptyMap()),
                         httpService,
                         EthSubscribe.class);
@@ -119,6 +119,6 @@ public class HttpServiceTest {
                 UnsupportedOperationException.class,
                 () ->
                         httpService.subscribe(
-                                subscribeRequest, "eth_unsubscribe", NewHeadsNotification.class));
+                                subscribeRequest, "gptc_unsubscribe", NewHeadsNotification.class));
     }
 }

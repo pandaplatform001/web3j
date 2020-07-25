@@ -77,7 +77,7 @@ public class JsonRpc2_0GethTest {
         verify(webSocketClient)
                 .send(
                         matches(
-                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"eth_subscribe\",\"params\":"
+                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"gptc_subscribe\",\"params\":"
                                         + "\\[\"newPendingTransactions\"],\"id\":[0-9]{1,}}"));
     }
 
@@ -88,7 +88,7 @@ public class JsonRpc2_0GethTest {
         verify(webSocketClient)
                 .send(
                         matches(
-                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"eth_subscribe\","
+                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"gptc_subscribe\","
                                         + "\"params\":\\[\"syncing\"],\"id\":[0-9]{1,}}"));
     }
 

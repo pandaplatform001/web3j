@@ -514,13 +514,13 @@ public class WebSocketServiceTest {
     private Flowable<NewHeadsNotification> subscribeToEvents() {
         subscribeRequest =
                 new Request<>(
-                        "eth_subscribe",
+                        "gptc_subscribe",
                         Arrays.asList("newHeads", Collections.emptyMap()),
                         service,
                         EthSubscribe.class);
         subscribeRequest.setId(1);
 
-        return service.subscribe(subscribeRequest, "eth_unsubscribe", NewHeadsNotification.class);
+        return service.subscribe(subscribeRequest, "gptc_unsubscribe", NewHeadsNotification.class);
     }
 
     private void sendErrorReply() throws IOException {
@@ -564,7 +564,7 @@ public class WebSocketServiceTest {
     private void verifyStartedSubscriptionHandshake() {
         verify(webSocketClient)
                 .send(
-                        "{\"jsonrpc\":\"2.0\",\"method\":\"eth_subscribe\","
+                        "{\"jsonrpc\":\"2.0\",\"method\":\"gptc_subscribe\","
                                 + "\"params\":[\"newHeads\",{}],\"id\":1}");
     }
 
@@ -572,7 +572,7 @@ public class WebSocketServiceTest {
         verify(webSocketClient)
                 .send(
                         startsWith(
-                                "{\"jsonrpc\":\"2.0\",\"method\":\"eth_unsubscribe\","
+                                "{\"jsonrpc\":\"2.0\",\"method\":\"gptc_unsubscribe\","
                                         + "\"params\":[\"0xcd0c3e8af590364c09d0fa6a1210faf5\"]"));
     }
 
@@ -597,7 +597,7 @@ public class WebSocketServiceTest {
         service.onWebSocketMessage(
                 "{"
                         + "  \"jsonrpc\":\"2.0\","
-                        + "  \"method\":\"eth_subscription\","
+                        + "  \"method\":\"gptc_subscription\","
                         + "  \"params\":{"
                         + "    \"subscription\":\"0xcd0c3e8af590364c09d0fa6a1210faf5\","
                         + "    \"result\":{"

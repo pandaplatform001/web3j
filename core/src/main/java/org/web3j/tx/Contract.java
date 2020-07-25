@@ -223,7 +223,7 @@ public abstract class Contract extends ManagedTransaction {
      * is in fact the contract you believe it is.
      *
      * <p>This method uses the <a
-     * href="https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getcode">eth_getCode</a> method to
+     * href="https://github.com/ethereum/wiki/wiki/JSON-RPC#gptc_getcode">gptc_getCode</a> method to
      * get the contract byte code and validates it against the byte code stored in this smart
      * contract wrapper.
      *

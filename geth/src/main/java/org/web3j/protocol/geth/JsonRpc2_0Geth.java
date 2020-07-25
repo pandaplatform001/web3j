@@ -89,11 +89,11 @@ public class JsonRpc2_0Geth extends JsonRpc2_0Admin implements Geth {
     public Flowable<PendingTransactionNotification> newPendingTransactionsNotifications() {
         return web3jService.subscribe(
                 new Request<>(
-                        "eth_subscribe",
+                        "gptc_subscribe",
                         Arrays.asList("newPendingTransactions"),
                         web3jService,
                         EthSubscribe.class),
-                "eth_unsubscribe",
+                "gptc_unsubscribe",
                 PendingTransactionNotification.class);
     }
 
@@ -101,11 +101,11 @@ public class JsonRpc2_0Geth extends JsonRpc2_0Admin implements Geth {
     public Flowable<SyncingNotfication> syncingStatusNotifications() {
         return web3jService.subscribe(
                 new Request<>(
-                        "eth_subscribe",
+                        "gptc_subscribe",
                         Arrays.asList("syncing"),
                         web3jService,
                         EthSubscribe.class),
-                "eth_unsubscribe",
+                "gptc_unsubscribe",
                 SyncingNotfication.class);
     }
 }

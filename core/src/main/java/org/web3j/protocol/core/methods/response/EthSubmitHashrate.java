@@ -14,7 +14,7 @@ package org.web3j.protocol.core.methods.response;
 
 import org.web3j.protocol.core.Response;
 
-/** eth_submitHashrate. */
+/** gptc_submitHashrate. */
 public class EthSubmitHashrate extends Response<Boolean> {
 
     public boolean submissionSuccessful() {

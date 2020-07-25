@@ -22,7 +22,7 @@ import org.web3j.abi.datatypes.Type;
 import org.web3j.abi.datatypes.Utf8String;
 import org.web3j.protocol.core.Response;
 
-/** eth_call. */
+/** gptc_call. */
 public class EthCall extends Response<String> {
 
     // Numeric.toHexString(Hash.sha3("Error(string)".getBytes())).substring(0, 10)

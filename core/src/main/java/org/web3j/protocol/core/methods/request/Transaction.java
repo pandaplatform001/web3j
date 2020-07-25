@@ -22,14 +22,14 @@ import org.web3j.utils.Numeric;
  * Transaction request object used the below methods.
  *
  * <ol>
- *   <li>eth_call
- *   <li>eth_sendTransaction
- *   <li>eth_estimateGas
+ *   <li>gptc_call
+ *   <li>gptc_sendTransaction
+ *   <li>gptc_estimateGas
  * </ol>
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Transaction {
-    // default as per https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sendtransaction
+    // default as per https://github.com/ethereum/wiki/wiki/JSON-RPC#gptc_sendtransaction
     public static final BigInteger DEFAULT_GAS = BigInteger.valueOf(9000);
 
     private String from;
@@ -38,7 +38,7 @@ public class Transaction {
     private BigInteger gasPrice;
     private BigInteger value;
     private String data;
-    private BigInteger nonce; // nonce field is not present on eth_call/eth_estimateGas
+    private BigInteger nonce; // nonce field is not present on gptc_call/gptc_estimateGas
     private BigInteger gasPremium;
     private BigInteger feeCap;
 

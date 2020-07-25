@@ -28,14 +28,14 @@ import org.web3j.protocol.core.Response;
  * Transaction object returned by:
  *
  * <ul>
- *   <li>eth_getTransactionByHash
- *   <li>eth_getTransactionByBlockHashAndIndex
- *   <li>eth_getTransactionByBlockNumberAndIndex
+ *   <li>gptc_getTransactionByHash
+ *   <li>gptc_getTransactionByBlockHashAndIndex
+ *   <li>gptc_getTransactionByBlockNumberAndIndex
  * </ul>
  *
  * <p>This differs slightly from the request {@link EthSendTransaction} Transaction object.
  *
- * <p>See <a href="https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gettransactionbyhash">docs</a>
+ * <p>See <a href="https://github.com/ethereum/wiki/wiki/JSON-RPC#gptc_gettransactionbyhash">docs</a>
  * for further details.
  */
 public class EthTransaction extends Response<Transaction> {

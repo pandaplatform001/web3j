@@ -386,7 +386,7 @@ public class CoreIT {
         assertNotNull(ethGetCompilers.getCompilers());
     }
 
-    @Disabled // The method eth_compileLLL does not exist/is not available
+    @Disabled // The method gptc_compileLLL does not exist/is not available
     @Test
     public void testEthCompileLLL() throws Exception {
         EthCompileLLL ethCompileLLL = web3j.ethCompileLLL("(returnlll (suicide (caller)))").send();
@@ -408,7 +408,7 @@ public class CoreIT {
                 (sourceCode));
     }
 
-    @Disabled // The method eth_compileSerpent does not exist/is not available
+    @Disabled // The method gptc_compileSerpent does not exist/is not available
     @Test
     public void testEthCompileSerpent() throws Exception {
         EthCompileSerpent ethCompileSerpent = web3j.ethCompileSerpent("/* some serpent */").send();
@@ -426,20 +426,20 @@ public class CoreIT {
         String eventSignature = config.encodedEvent();
         ethFilter.addSingleTopic(eventSignature);
 
-        // eth_newFilter
+        // gptc_newFilter
         EthFilter ethNewFilter = web3j.ethNewFilter(ethFilter).send();
         BigInteger filterId = ethNewFilter.getFilterId();
 
-        // eth_getFilterLogs
+        // gptc_getFilterLogs
         EthLog ethFilterLogs = web3j.ethGetFilterLogs(filterId).send();
         List<EthLog.LogResult> filterLogs = ethFilterLogs.getLogs();
         assertFalse(filterLogs.isEmpty());
 
-        // eth_getFilterChanges - nothing will have changed in this interval
+        // gptc_getFilterChanges - nothing will have changed in this interval
         EthLog ethLog = web3j.ethGetFilterChanges(filterId).send();
         assertTrue(ethLog.getLogs().isEmpty());
 
-        // eth_uninstallFilter
+        // gptc_uninstallFilter
         EthUninstallFilter ethUninstallFilter = web3j.ethUninstallFilter(filterId).send();
         assertTrue(ethUninstallFilter.isUninstalled());
     }

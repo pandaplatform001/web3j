@@ -31,12 +31,12 @@ import org.web3j.protocol.core.Response;
  * Log object returned by:
  *
  * <ul>
- *   <li>eth_getFilterChanges
- *   <li>eth_getFilterLogs
- *   <li>eth_getLogs
+ *   <li>gptc_getFilterChanges
+ *   <li>gptc_getFilterLogs
+ *   <li>gptc_getLogs
  * </ul>
  *
- * <p>See <a href="https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getfilterchanges">docs</a> for
+ * <p>See <a href="https://github.com/ethereum/wiki/wiki/JSON-RPC#gptc_getfilterchanges">docs</a> for
  * further details.
  */
 public class EthLog extends Response<List<EthLog.LogResult>> {

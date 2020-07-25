@@ -17,7 +17,7 @@ import java.math.BigInteger;
 import org.web3j.protocol.core.Response;
 import org.web3j.utils.Numeric;
 
-/** eth_hashrate. */
+/** gptc_hashrate. */
 public class EthHashrate extends Response<String> {
     public BigInteger getHashrate() {
         return Numeric.decodeQuantity(getResult());

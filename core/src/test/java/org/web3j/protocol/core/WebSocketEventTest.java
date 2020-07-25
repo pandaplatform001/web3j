@@ -80,7 +80,7 @@ public class WebSocketEventTest {
         verify(webSocketClient)
                 .send(
                         matches(
-                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"eth_subscribe\","
+                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"gptc_subscribe\","
                                         + "\"params\":\\[\"newHeads\"],\"id\":[0-9]{1,}}"));
     }
 
@@ -91,7 +91,7 @@ public class WebSocketEventTest {
         verify(webSocketClient)
                 .send(
                         matches(
-                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"eth_subscribe\","
+                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"gptc_subscribe\","
                                         + "\"params\":\\[\"logs\",\\{}],\"id\":[0-9]{1,}}"));
     }
 
@@ -102,7 +102,7 @@ public class WebSocketEventTest {
         verify(webSocketClient)
                 .send(
                         matches(
-                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"eth_subscribe\","
+                                "\\{\"jsonrpc\":\"2.0\",\"method\":\"gptc_subscribe\","
                                         + "\"params\":\\[\"logs\",\\{\"address\":\\[\"0x1\"],"
                                         + "\"topics\":\\[\"0x2\"]}],\"id\":[0-9]{1,}}"));
     }

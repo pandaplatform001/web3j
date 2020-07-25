@@ -16,7 +16,7 @@ import java.util.List;
 
 import org.web3j.protocol.core.Response;
 
-/** eth_getWork. */
+/** gptc_getWork. */
 public class EthGetWork extends Response<List<String>> {
 
     public String getCurrentBlockHeaderPowHash() {
