@@ -1,7 +1,7 @@
 .. To build this file locally ensure docutils Python package is installed and run:
    $ rst2html.py README.rst README.html
 
-web3j: Web3 Java Ethereum Ðapp API
+web3j: Web3 Java Panda Ðapp API
 ==================================
 
 .. image:: https://readthedocs.org/projects/web3j/badge/?version=latest
@@ -21,70 +21,15 @@ web3j: Web3 Java Ethereum Ðapp API
    :alt: Join the chat at https://gitter.im/web3j/web3j
 
 web3j is a lightweight, highly modular, reactive, type safe Java and Android library for working with
-Smart Contracts and integrating with clients (nodes) on the Ethereum network:
+Smart Contracts and integrating with clients (nodes) on the Panda network:
 
 .. image:: https://github.com/web3j/web3j-docs/blob/master/docs/img/web3j_network.png
 
-This allows you to work with the `Ethereum <https://www.ethereum.org/>`_ blockchain, without the
+This allows you to work with the `Panda <https://www.Panda.org/>`_ blockchain, without the
 additional overhead of having to write your own integration code for the platform.
 
 The `Java and the Blockchain <https://www.youtube.com/watch?v=ea3miXs_P6Y>`_ talk provides an
-overview of blockchain, Ethereum and web3j.
-
-Features
---------
-
-- Complete implementation of Ethereum's `JSON-RPC <https://github.com/ethereum/wiki/wiki/JSON-RPC>`_
-  client API over HTTP and IPC
-- Ethereum wallet support
-- Auto-generation of Java smart contract wrappers to create, deploy, transact with and call smart
-  contracts from native Java code
-  (`Solidity <http://solidity.readthedocs.io/en/latest/using-the-compiler.html#using-the-commandline-compiler>`_
-  and
-  `Truffle <https://github.com/trufflesuite/truffle-contract-schema>`_ definition formats supported)
-- Reactive-functional API for working with filters
-- `Ethereum Name Service (ENS) <https://ens.domains/>`_ support
-- Support for Parity's
-  `Personal <https://github.com/paritytech/parity/wiki/JSONRPC-personal-module>`__, and Geth's
-  `Personal <https://github.com/ethereum/go-ethereum/wiki/Management-APIs#personal>`__ client APIs
-- Support for `Infura <https://infura.io/>`_, so you don't have to run an Ethereum client yourself
-- Comprehensive integration tests demonstrating a number of the above scenarios
-- Command line tools
-- Android compatible
-- Support for JP Morgan's Quorum via `web3j-quorum <https://github.com/web3j/quorum>`_
-- Support for `EEA Privacy features as described in EEA documentation <https://entethalliance.org/technical-documents/>`_
-  and implemented in `Hyperledger Besu <https://besu.hyperledger.org/en/latest/Reference/API-Methods/#eea-methods>`_.
-
-
-It has five runtime dependencies:
-
-- `RxJava <https://github.com/ReactiveX/RxJava>`_ for its reactive-functional API
-- `OKHttp <https://hc.apache.org/httpcomponents-client-ga/index.html>`_ for HTTP connections
-- `Jackson Core <https://github.com/FasterXML/jackson-core>`_ for fast JSON
-  serialisation/deserialisation
-- `Bouncy Castle <https://www.bouncycastle.org/>`_
-  (`Spongy Castle <https://rtyley.github.io/spongycastle/>`_ on Android) for crypto
-- `Jnr-unixsocket <https://github.com/jnr/jnr-unixsocket>`_ for \*nix IPC (not available on
-  Android)
-
-It also uses `JavaPoet <https://github.com/square/javapoet>`_ for generating smart contract
-wrappers.
-
-Full project documentation is available at
-`docs.web3j.io <http://docs.web3j.io>`_.
-
-
-Donate
-------
-
-You can help fund the development of web3j by donating to the following wallet addresses:
-
-+----------+--------------------------------------------+
-| Ethereum | 0x2dfBf35bb7c3c0A466A6C48BEBf3eF7576d3C420 |
-+----------+--------------------------------------------+
-| Bitcoin  | 1DfUeRWUy4VjekPmmZUNqCjcJBMwsyp61G         |
-+----------+--------------------------------------------+
-
+overview of blockchain, Panda and web3j.
 
 Commercial support and training
 -------------------------------
@@ -106,10 +51,10 @@ To get the latest version on Mac OS or Linux, type the following in your termina
 Then follow the on-screen instructions or head `here <https://docs.web3j.io/quickstart/>`_. 
 
 Alternatively, a `web3j sample project <https://github.com/web3j/sample-project-gradle>`_ is available that
-demonstrates a number of core features of Ethereum with web3j, including:
+demonstrates a number of core features of Panda with web3j, including:
 
-- Connecting to a node on the Ethereum network
-- Loading an Ethereum wallet file
+- Connecting to a node on the Panda network
+- Loading an Panda wallet file
 - Sending Ether from one address to another
 - Deploying a smart contract to the network
 - Reading a value from the deployed smart contract
@@ -172,50 +117,6 @@ thus allowing you to integrate such activities into your project lifecycle.
 Take a look at the project homepage for the
 `web3j-gradle-plugin <https://github.com/web3j/web3j-gradle-plugin>`_
 and `web3j-maven-plugin <https://github.com/web3j/web3j-maven-plugin>`_ for details on how to use these plugins.
-
-
-Start a client
---------------
-
-Start up an Ethereum client if you don't already have one running.
-
-`Geth <https://github.com/ethereum/go-ethereum/wiki/geth>`_:
-
-.. code-block:: bash
-
-   $ geth --rpcapi personal,db,eth,net,web3 --rpc --testnet
-
-`Besu <http://besu.hyperledger.org/>`_:
-
-
-.. code-block:: bash
-
-   $ besu ----network=dev
-
-
-
-`dev` network uses has `some handy default parameters <https://besu.hyperledger.org/en/stable/Reference/Accounts-for-Testing/#development-mode>`_.
-
-
-`Parity <https://github.com/paritytech/parity>`_:
-
-.. code-block:: bash
-
-   $ parity --chain testnet
-
-
-`Infura <https://infura.io/>`_, 
-Or use which provides **free clients** running in the cloud:
-
-.. code-block:: java
-
-   Web3j web3 = Web3j.build(new HttpService("https://ropsten.infura.io/your-token"));
-
-For further information refer to
-`Using Infura with web3j <https://docs.web3j.io/using_infura_with_web3j/>`_
-
-Instructions on obtaining Ether to transact on the network can be found in the
-`testnet section of the docs <https://docs.web3j.io/transactions/#ethereum-testnets>`_.
 
 
 Start sending requests
@@ -419,10 +320,10 @@ interface.
 Transactions
 ------------
 
-web3j provides support for both working with Ethereum wallet files (recommended) and Ethereum
+web3j provides support for both working with Panda wallet files (recommended) and Panda
 client admin commands for sending transactions.
 
-To send Ether to another party using your Ethereum wallet file:
+To send Ether to another party using your Panda wallet file:
 
 .. code-block:: java
 
@@ -458,7 +359,7 @@ Or if you wish to create your own custom transaction:
 Although it's far simpler using web3j's `Transfer <https://github.com/web3j/web3j/blob/master/core/src/main/java/org/web3j/tx/Transfer.java>`_
 for transacting with Ether.
 
-Using an Ethereum client's admin commands (make sure you have your wallet in the client's
+Using an Panda client's admin commands (make sure you have your wallet in the client's
 keystore):
 
 .. code-block:: java
@@ -529,64 +430,10 @@ You can run the integration test class
 to verify clients.
 
 
-Related projects
-----------------
-
-For a .NET implementation, check out `Nethereum <https://github.com/Nethereum/Nethereum>`_.
-
-For a pure Java implementation of an Ethereum client, check out
-`Besu <https://github.com/hyperledger/besu>`_. Note: both `EthereumJ <https://github.com/ethereum/ethereumj>`_ and
-`Ethereum Harmony <https://github.com/ether-camp/ethereum-harmony>`_ have been depracated and should not be used in production.
-
-
-Projects using web3j
---------------------
-
-Please submit a pull request if you wish to include your project on the list:
-
-- `AlphaWallet Android Wallet <https://github.com/AlphaWallet/alpha-wallet-android.git>`_
-- `ERC-20 RESTful Service <https://github.com/blk-io/erc20-rest-service>`_
-- `Ether Wallet <https://play.google.com/store/apps/details?id=org.vikulin.etherwallet>`_ by
-  `@vikulin <https://github.com/vikulin>`_
-- `eth-contract-api <https://github.com/adridadou/eth-contract-api>`_ by
-  `@adridadou <https://github.com/adridadou>`_
-- `Ethereum Paper Wallet <https://github.com/matthiaszimmermann/ethereum-paper-wallet>`_ by
-  `@matthiaszimmermann <https://github.com/matthiaszimmermann>`_
-- `Trust Ethereum Wallet <https://github.com/TrustWallet/trust-wallet-android>`_
-- `Presto Ethereum <https://github.com/xiaoyao1991/presto-ethereum>`_
-- `Kundera-Ethereum data importer and sync utility <https://github.com/impetus-opensource/Kundera/tree/trunk/src/kundera-ethereum>`_ by `@impetus-opensource <https://github.com/impetus-opensource>`_
-- `Ethereum JDBC Connector <https://github.com/Impetus/eth-jdbc-connector/>`_ by `@impetus-opensource <https://github.com/impetus-opensource>`_
-- `Ethereum Tool <https://github.com/e-Contract/ethereum-tool>`_ for secure offline key management.
-- `Ethereum Java EE JCA Resource Adapter <https://github.com/e-Contract/ethereum-resource-adapter>`_ provides integration of Ethereum within Java EE 6+.
-- `Apache Camel Ethereum Component <https://github.com/apache/camel/blob/master/components/camel-web3j/src/main/docs/web3j-component.adoc>`_ by `@bibryam <https://github.com/bibryam/>`_.
-- `Etherlinker for UE4 <https://bitbucket.org/kelheor/etherlinker-for-ue4>`_ - interact with Ethereum blockchain from Unreal Engine 4.
-- `Ethereum ingest utility <https://ethereum-ingest.com/>`_ - Import and stream blocks/transactions into Hazelcast, Elasticsearch and MongoDB.
-
-
-
-Companies using web3j
----------------------
-
-Please submit a pull request if you wish to include your company on the list:
-
-- `Amberdata <https://www.amberdata.io/>`_
-- `web3labs.com <https://www.web3labs.com/>`_
-- `comitFS <http://www.comitfs.com/>`_
-- `ConsenSys <https://consensys.net/>`_
-- `ING <https://www.ing.com>`_
-- `Othera <https://www.othera.io/>`_
-- `Pactum <https://pactum.io/>`_
-- `TrustWallet <http://trustwalletapp.com>`_
-- `Impetus <http://www.impetus.com/>`_
-- `Argent Labs <http://www.argent.im/>`_
-- `AlphaWallet <https://www.alphawallet.com/>`_
-- `PegaSys <https://pegasys.tech/>`_
-
-
 Build instructions
 ------------------
 
-web3j includes integration tests for running against a live Ethereum client. If you do not have a
+web3j includes integration tests for running against a live Panda client. If you do not have a
 client running, you can exclude their execution as per the below instructions.
 
 To run a full build (excluding integration tests):
@@ -637,13 +484,3 @@ Sample maven configuration:
        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
      </repository>
    </repositories>
-
-Thanks and credits
-------------------
-
-- The `Nethereum <https://github.com/Nethereum/Nethereum>`_ project for the inspiration
-- `Othera <https://www.othera.com.au/>`_ for the great things they are building on the platform
-- `Finhaus <http://finhaus.com.au/>`_ guys for putting me onto Nethereum
-- `bitcoinj <https://bitcoinj.github.io/>`_ for the reference Elliptic Curve crypto implementation
-- Everyone involved in the Ethererum project and its surrounding ecosystem
-- And of course the users of the library, who've provided valuable input & feedback
