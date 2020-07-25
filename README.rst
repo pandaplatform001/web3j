@@ -4,38 +4,11 @@
 web3j: Web3 Java Panda Ðapp API
 ==================================
 
-.. image:: https://readthedocs.org/projects/web3j/badge/?version=latest
-   :target: http://docs.web3j.io
-   :alt: Documentation Status
-
-.. image:: https://travis-ci.org/web3j/web3j.svg?branch=master
-   :target: https://travis-ci.org/web3j/web3j
-   :alt: Build Status
-
-.. image:: https://codecov.io/gh/web3j/web3j/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/web3j/web3j
-   :alt: codecov
-
-.. image:: https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.web3labs.com
-   :target: https://community.web3labs.com
-   :alt: Join the chat at https://gitter.im/web3j/web3j
-
 web3j is a lightweight, highly modular, reactive, type safe Java and Android library for working with
-Smart Contracts and integrating with clients (nodes) on the Panda network:
-
-.. image:: https://github.com/web3j/web3j-docs/blob/master/docs/img/web3j_network.png
+Smart Contracts and integrating with clients (nodes) on the Panda network.
 
 This allows you to work with the `Panda <https://www.Panda.org/>`_ blockchain, without the
 additional overhead of having to write your own integration code for the platform.
-
-The `Java and the Blockchain <https://www.youtube.com/watch?v=ea3miXs_P6Y>`_ talk provides an
-overview of blockchain, Panda and web3j.
-
-Commercial support and training
--------------------------------
-
-Commercial support and training is available from `web3labs.com <https://www.web3labs.com/>`_.
-
 
 Quickstart
 ----------
